@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos javascript en udemy</title>
+    <style>
+         </style>
+         <title>Udemy</title>
+</head>
+
+<body>
+    <h1>constructor en javascript</h1>
+    <p>Un constructor dentro de la programacion orientada a objetos</p>
+    <p>es como una subfuncion de la clase que tiene la funcion inicializar objetos</p>
+    <p>se crea siempre cuando creamos un objeto </p>
+    <br>
+    <p>dentro del constructor vamos a poner los atributos de la class que usamos</p>
+    <p>en este caso nombre,edad</p>
+    <p>tenemos que indicarle al constructor que esos atributos se los<br></p>
+    <p>asigne como variables de la clase que esta usando</p>
+    <br>
+    <p>con la palabra reservada this hacemos referencia a la clase actual  "this.nombre=nombre;"<br>
+    asi tenemos los dos atributos dentro del constructor</p>
+    <p>el constructor se usa automaticamente al crear cada objeto o<br>
+         cuando se manda a llamar al metodo constructor o cuando se realiza una instancia del </p>
+    <script>
+        class Persona{
+            constructor(nombre,edad){
+                this.nombre=nombre;
+                this.edad=edad;
+               // alert("se a creado una nueva persona");//se ejecuta por cada nuevo objeto
+            }
+            //metodos de personas
+            diHola(){
+                alert(this.nombre + " hola");
+
+
+            }
+            diAdios(){
+                alert(this.nombre + this.edad + " adios");
+            }
+        }
+        //los objetos de la clase persoas
+        var diego=new Persona("diego ",26);
+            diego.diHola();//USAMOS LOS METODOS DEL CONSTRUCTOR EN EL OBJETO
+        let ruben= new Persona ("ruben ",31);
+            ruben.diAdios();
+        var ADOLFO=new Persona("adolfo ",54);
+            ADOLFO.diHola();
+            ADOLFO.diAdios();
+        </script>
+</body>
+</html>
