@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos javascript en udemy</title>
+    <style>
+         </style>
+         <title>Udemy</title>
+</head>
+
+<body>
+    <h1>var y let en javascript</h1>
+   
+    <script>
+     let string1 ="textovalor";
+     var numero1 = 1;
+     console.log(" console.log objetos");
+     console.log(" ");
+      console.log(string1);
+      console.log(typeof string1);
+      console.log(" ");
+      console.log(numero1);
+      console.log(typeof numero1);
+      console.log(" ");
+     var obj1={propiedad: "texto",
+                propiedad1:2,
+            propiedad2:{prot:"otro objeto",
+                        prot1:[1950, "años", 1970, 1980, 1990, 2000, 2010]}//objeto  
+                    }
+
+                    console.log("mostrando propiedades de un objeto:");
+                    console.log(obj1.propiedad);
+                    console.log(" ");
+                    console.log("mostrando una propiedad del objeto");
+                    console.log( typeof obj1.propiedad);
+                    console.log( typeof obj1.propiedad1);
+                    console.log(" ");
+                    console.log("mostrando un objeto dentro de  otro con su propiedad")
+                    console.log(typeof obj1.propiedad2.prot);
+                    console.log(typeof obj1.propiedad2.prot1);
+                    console.log(obj1.propiedad2.prot1);
+                    console.log("Object.values");
+                    console.log(Object.values(obj1));
+                    console.log(" ");
+                    console.log(typeof obj1);
+                    let a=null;
+                    console.log(" ");
+                    console.log("null es un objeto para typeof");
+                    console.log(typeof a);
+                    console.log(" ");
+                    console.log("boolean++");
+                    let vari1=true;
+                    let vari2=false;
+                    console.log(typeof vari1);
+                    console.log(" ");
+                    console.log("usando la fuincion symbol:");
+                    console.log(typeof Symbol());
+
+                    //expreciones
+                    console.log(" ");
+                    //las expreciones estan del lado derechode uns "="
+                    console.log("notacioin de objetos:");
+                    let boj23={
+                        prop:1,
+                        prop2:3
+                    }
+                    console.log(boj23.prop);
+                    console.log(" ");
+
+                    console.log("objeto windows inportante en javascript");
+                    console.log(window);
+                    console.log("windows es toda la pantalla de nuestra web basicamente");
+                    console.log(" ");
+                    console.log("mostrar el ancho de la ventana de windows");
+                    console.log(window.innerWidth);
+                    console.log("cambia segun el tamaño de la parte blanca de la web del navgador");
+                    console.log(" ");
+                    console.log("propiedad alert");
+                    console.log(typeof alert("alertas de javascript"));
+                    console.log(alert("dice undefined"));
+                    window.alert("hola alert");
+                    console.log(" ");
+                    console.log("el ambito o scope actualmente estamos parados en el scope de window");
+                    console.log(" ");
+                    
+        </script>
+</body>
+</html>
