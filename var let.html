@@ -84,7 +84,34 @@
                     console.log(" ");
                     console.log("el ambito o scope actualmente estamos parados en el scope de window");
                     console.log(" ");
+                    console.log("document es la representacion de todo el documento html dentro de un obj de javascript");
+                    console.log("set es una fuincion de window");
+                    console.log(" ");
+                    console.log(" buscar bien lo que es un Set");
+                    console.log("set es solo para iterables");
+                    // let miset1=new Set(obj1);
+                    console.log("set solo sirve para cosas como arrays");
+                    //console.log(miset1);
+                    let arry = [1,2,3];
+                    let setbien = new Set(arry);
                     
-        </script>
+                    console.log("no muestra el set"+ setbien);
+                    console.log(window.document==document);
+                    console.log(" document es la represencation  de los elementos del html para javascript");
+                    console.log(" ");
+                    console.log("El objeto Set le permite almacenar valores únicos de cualquier tipo, ya sea valores primitivos o referencias a objetos.");
+                    console.log("Los objetos Set son colecciones de valores. Puede iterar a través de los elementos de un conjunto en orden de inserción. Un valor en un Set solo puede ocurrir una vez; es único en la colección del Set.");
+                    console.log(" ");
+                    console.log(document);
+                    console.dir(document);
+                    console.log(" ");
+                    console.log("document tiene una anidacion de objetos utiles para el navegador web osea NESTIMG");
+                    console.log("Y EL SCOPE ES EL ALCANZEDE DOCUMENTO");
+                    console.log(" ");
+                    console.log("la diferencia entre var y let es que var nos premite declarar una variable en dos ambitos diferentes de un bloque de codigo con el mismo nombre y let no nos permite tener el nombre duplicado");
+                    console.log("las variables declaradas con var las podemos usar fuera de sus ambitos de declaracion ");
+                    console.log(" ");
+                    console.log("const y let se mantiene solo en sus ambitos de trabajo no pueden ser usadas desde otro ambito por que se destruyen o no existen fuera de su ambito de trabajo");
+      </script>
 </body>
 </html>
