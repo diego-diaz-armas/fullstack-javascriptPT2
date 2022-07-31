@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos javascript en udemy</title>
+    <style>
+         </style>
+         <title>Udemy</title>
+</head>
+
+<body>
+    <h1>funciones Udemy</h1>
+   
+    <script>
+       
+            function mifuncion(sum1, sum2){
+                const resultado=sum1+sum2;
+                return resultado;
+            }
+            console.log(mifuncion(10,2));
+            console.log(" ");
+            function sumar(num1,num2){
+                console.log(arguments);
+                const resul=num1+num2;
+                return resul;
+            }
+            console.log("argument es una propiedad que muestra las propiedades de una funcion como parte de u arry ");
+            console.log("donde 0= num1 y 1=num2 0 y 1 serian el indice de ese array");
+            console.log(sumar(1,-2));//a esto se le llama llamar la funcion o call
+            console.log(" ");
+
+            //tambien se puede hacer
+            const r= sumar(1,2);
+            console.log(r);
+            console.log(" ");
+            const z=sumar(8,9);
+            console.log(z);;
+            console.log(sumar(r,z));
+            //destructurascion
+            function sumarr({n1,n2}){
+                console.log(arguments);
+                const t=n1+n2;
+                return t;
+            }
+const b =sumarr({n1:16,n2:55});
+console.log(b);
+//tambien funciona
+console.log(" ");
+function sumarr2(numeros){
+                console.log(arguments);
+                const t=numeros.n1+numeros.n2;
+                return t;
+            }
+            
+const b2 =sumarr2({n1:16,n2:55});
+console.log(b2);
+            console.log(" ");
+            document.write("<h1>Metodos e iteradores</h1>");//asi incrusto html desde el script
+ </script>
+</body>
+</html>
