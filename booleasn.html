@@ -27,6 +27,21 @@ En muchos contextos del lenguaje,<br> decir que retorna verdadero o falso no es 
 Cuando el intérprete necesita saber si un valor es truthy o falsy hace un proceso llamado type coercion, del que hablaremos más adelante, que en términos simples significa que hará una conversión implícita,<br> si lo simplificamos más significa que el lenguaje convertirá el valor a verdadero para evaluar si es truthy o falsy.<br><br> Esta conversión es, digamos, momentánea, el valor original o la variable no cambian su valor, javaScript sólo obtendrá su representación booleana para saber si es truthy o falsy, sin modificar el valor original.
 
 Continuemos</p>`);
+let indefinida;
+let nada=null;
+console.log(indefinida);//no a sido asignado un valor a la variable
+console.log(nada);//null es un valor null
+let verdadero=true;
+let falso=false;
+console.log(typeof verdadero);
+console.log(verdadero);
+console.log(typeof falso);
+console.log(falso);
+            //tambien podemos construir valores booleanos a partir del cosntructor de boolean
+            let newbool=Boolean(true);
+            console.log(typeof newbool);
+            console.log(newbool);
+            console.log(" ");
     </script>
 </body>
 </html>
