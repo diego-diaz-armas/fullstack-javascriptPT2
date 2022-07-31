@@ -12,7 +12,7 @@
 
 <body>
     <h1>funciones Udemy</h1>
-   
+   <h2>seccion 4 javascript basico</h2>
     <script>
        
             function mifuncion(sum1, sum2){
@@ -39,7 +39,7 @@
             console.log(z);;
             console.log(sumar(r,z));
             //destructurascion
-            function sumarr({n1,n2}){
+            function sumarr({n1,n2}){//esto es pasar los numeros en un objeto 
                 console.log(arguments);
                 const t=n1+n2;
                 return t;
@@ -58,6 +58,72 @@ const b2 =sumarr2({n1:16,n2:55});
 console.log(b2);
             console.log(" ");
             document.write("<h1>Metodos e iteradores</h1>");//asi incrusto html desde el script
+            console.log(" ");
+            console.log("creo un objeto persona para aprender metodos e iteradores");
+            console.log(" ");
+            const persona={
+                nombre:' maria' ,
+                apellido: ' suarez' ,
+                id:2,
+            //oy a crear un metodo para obtener el nombre completo de esta persona
+             nombreCompleto: function(){
+                console.log(arguments);
+                return `${this.nombre} ${this.apellido}`
+            }
+            }
+
+            console.log(persona);
+            console.log(" ");
+            
+            console.log(" ");
+            console.log("vamos a ver metodos que realmente son funciones : que pertenecen a un objeto.");
+            console.log("una acion que podemos haer por medio de una funcion se llama metodo siempre de los objetos");
+            console.log(" ");
+            console.log(persona.nombreCompleto());
+            console.log(" ");
+            console.log("--ARRAYS--");
+            const miArray=[1,2,3,'hola',28,{a:1}];
+            console.log('mi array ' + `${miArray}`);
+            console.log(typeof miArray);
+            //vamos a recorrer ese array vamos a obtener un objeto iterable desde este array
+            console.log(" ");
+            let iter=miArray[Symbol.iterator]();
+            console.log(iter.next().value);//esto nos va a devolver el primer elemento del array iterator
+            console.log(iter.next().value);//y asi susesivamente 
+            console.log(iter.next().value);
+            console.log(iter.next().value);
+            console.log(iter.next().value);
+            console.log(iter.next().value);
+            //esto demuestra que el array tiene un iterador iter 
+            console.log(" ");
+            console.log("el set tambien tiene iteradores:");
+
+            const set1= new Set([1,2,3,'hola',28,{a:1}]);
+            document.write("<p>no me muestra el set en consola </p>");
+            console.log('mi set '+ `${set1}`);
+            console.log(typeof set1);
+            console.log(set1);
+
+            console.log("para ver los valores de mi set1:");
+            let iter2=set1[Symbol.iterator]();
+            console.log(iter2.next().value);
+            console.log(iter2.next().value);
+            console.log(iter2.next().value);
+            console.log(iter2.next().value);
+            console.log(iter2.next().value);
+            console.log(iter2.next().value);
+            console.log(iter2.next().value);//este dice undefined por que no existe dentro del set
+            console.log(" ");
+            console.log("Arrays iterables y array.length");
+            //el motor de javascript es c++ acotacion util 
+            console.log(" ");
+                console.log("los objetos no so iterables no tienen la propiedad Symobl Iterator");
+                console.log("dentro de las propiedades de un array existe length que nos da el largo del array");
+            console.log(" ");
+            console.log('mi array ' + `${miArray}`);
+            console.log(miArray);
+            console.log(" ");
+
  </script>
 </body>
 </html>
